@@ -1,6 +1,6 @@
 const bookmarkList = [{
     title: "First Bookmark",
-    url: "HTTPS://bloc-thinkful.edu",
+    url: "https://bloc-thinkful.edu",
     description: "This is my coding bootcamp example",
     rating: 5,
     id: 1
