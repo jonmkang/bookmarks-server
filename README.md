@@ -1,6 +1,6 @@
-# Express Boilerplate!
+IMPORTANT FOR TESTING AND USE
 
-This is a boilerplate project used for starting new projects!
+You can either put the header for authorization, or move app.use(bookmarkRouter) above the token validation
 
 ## Set up
 
