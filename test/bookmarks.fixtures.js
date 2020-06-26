@@ -5,7 +5,7 @@ function makeBookmarksArray() {
         title: 'Bookmark one',
         description: 'This is bookmark one',
         url: "https://bookmarkone.com",
-        rating: 5
+        rating: '5'
         
       },
       {
@@ -13,7 +13,7 @@ function makeBookmarksArray() {
         title: 'Bookmark Two',
         description: 'This is bookmark Two',
         url: "https://bookmarktwo.com",
-        rating: 4
+        rating: '4'
         
       },
       {
@@ -21,7 +21,7 @@ function makeBookmarksArray() {
         title: 'Bookmark Three',
         description: 'This is bookmark three',
         url: "https://bookmarkthree.com",
-        rating: 3
+        rating: '3'
        
       },
       {
@@ -29,7 +29,7 @@ function makeBookmarksArray() {
         title: 'Bookmark Four',
         description: 'This is bookmark four',
         url: "https://bookmarkfour.com",
-        rating: 5
+        rating: '5'
        
       },
     ];

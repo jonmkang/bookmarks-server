@@ -27,7 +27,8 @@
     "pg": "^8.2.1",
     "supertest": "^4.0.2",
     "uuid": "^8.1.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "xss": "^1.0.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
