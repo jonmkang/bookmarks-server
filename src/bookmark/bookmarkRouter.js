@@ -85,6 +85,33 @@ bookmarkRouter
         )
         .catch(next)
     })
+    .patch(bodyParser, (req, res, next) => {
+        const { title, url, description, rating } = req.body;
+        const updateBookmark = { title, url, description, rating }
+
+        
+
+        const numberOfValues = Object.values(updateBookmark).filter(Boolean).length
+            if(numberOfValues === 0) {
+                return res.status(400).json({
+                    error: {
+                        message: `Request body must contain either 'title', 'url', 'rating`
+                    }
+                })
+            }
+        
+        if(updateBookmark.rating < 1 || updateBookmark.rating > 5){
+            return res.status(400).json({
+                error: { message: `Rating must be between 1 and 5` }
+            })
+        }
+
+        BookmarksService.updateBookmark(req.app.get('db'), req.params.id, updateBookmark)
+            .then(numRowsAffected => {
+                res.status(204).end()
+            })
+            .catch(next)
+    })
 
 
 module.exports = bookmarkRouter;
